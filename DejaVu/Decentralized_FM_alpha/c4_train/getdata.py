@@ -14,7 +14,7 @@ def dump_jsonl(data, output_path, append=False):
             f.write(json_record + "\n")
 
 
-dataset = load_dataset("c4", "en", split="train", streaming=True)
+dataset = load_dataset("allenai/c4","en", split='train', streaming=True)
 dataset = dataset.shuffle(buffer_size=10000, seed=42)
 path = "c4_train.jsonl"
 

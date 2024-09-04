@@ -3,7 +3,7 @@ file=./c4_train/c4_train.jsonl
     
 echo "start running ${file}"
 
-ARGS="--model-name /lustre/fsw/nvresearch/ldm/diffusion/checkpoint/opt-175b-new \
+ARGS="--model-name /share/datasets/public_models/facebook_opt-6.7b \
 --model-type opt-save \
 --seed 42 \
 --fp16 \
